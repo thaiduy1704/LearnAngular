@@ -1,3 +1,43 @@
 <p>home works!</p>
-<h1 class="text">Day la componet home </h1>
-<h2>Chao ban , ban ten la :{{name}} </h2>
+<div class="text">
+  <h1>Day la componet home </h1>
+  <!-- <h2>Day la danh sach trai cay</h2>
+  <div *ngFor = "let trai of traiCay ; let i = index">
+    <li>{{ i + 1}}. {{trai}}</li>
+  </div>
+  <br>
+  <table class = "table">
+    <tr>
+      <th>ID</th>
+      <th>Ten</th>
+      <th>Gia</th>
+      <th>HaGia</th>
+    </tr>
+    <tr *ngFor = "let trai of traiCay2 ; let i = index">
+      <td>{{i + 1}} </td>
+      <td>{{trai.ten | uppercase}}</td>
+      <td class="right">
+        <span [ngClass] = "{'so_am' : trai.gia < 0}">{{trai.gia | currency : "VND"}}</span>
+      </td>
+      <td >
+        <span>{{trai.sales| onSale }}</span>
+      </td>
+    </tr>
+
+  </table> -->
+  Thanh Pho
+  <select name="thanhpho" (change)= "changeCity($event)">
+    <option *ngFor = "let data of dataVietNam" value="{{data.city}}">{{data.city}}</option>
+
+  </select>
+  <br>
+  Quan huyen
+  <select name="quan">
+    <option *ngFor = "let data of districs" value="{{data}}">{{data}}</option>
+
+  </select>
+</div>
+
+
+
+
