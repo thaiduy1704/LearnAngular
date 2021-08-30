@@ -1,6 +1,6 @@
 <p>home works!</p>
 <div class="text">
-  <h1 appHighLight = "myColor">Day la componet home </h1>
+  <h1 >Day la componet home </h1>
   <h2>Day la danh sach trai cay</h2>
   <div *ngFor = "let trai of traiCay ; let i = index">
     <li>{{ i + 1}}. {{trai}}</li>
@@ -36,6 +36,10 @@
     <option *ngFor = "let data of districs" value="{{data}}">{{data}}</option>
 
   </select>
+  <span>Counter = {{counter}}</span>
+  <br>
+  <span>Counter ^ 2 = {{counterbinhphuong}}</span>
+
 </div>
 
 
