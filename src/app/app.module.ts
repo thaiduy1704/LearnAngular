@@ -11,6 +11,8 @@ import { TempleformComponent } from './templeform/templeform.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { FormGroup, FormControl } from '@angular/forms'
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
