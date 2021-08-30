@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  public myColor = "red "
+
   public name = 'Duy'
   public age  = 15
   public traiCay = ["tao ", "cam","viet quat","nho "]

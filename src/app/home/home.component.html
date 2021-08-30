@@ -1,7 +1,7 @@
 <p>home works!</p>
 <div class="text">
-  <h1>Day la componet home </h1>
-  <!-- <h2>Day la danh sach trai cay</h2>
+  <h1 appHighLight = "myColor">Day la componet home </h1>
+  <h2>Day la danh sach trai cay</h2>
   <div *ngFor = "let trai of traiCay ; let i = index">
     <li>{{ i + 1}}. {{trai}}</li>
   </div>
@@ -24,7 +24,7 @@
       </td>
     </tr>
 
-  </table> -->
+  </table>
   Thanh Pho
   <select name="thanhpho" (change)= "changeCity($event)">
     <option *ngFor = "let data of dataVietNam" value="{{data.city}}">{{data.city}}</option>
