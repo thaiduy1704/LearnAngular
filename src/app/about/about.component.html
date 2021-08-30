@@ -1,1 +1,13 @@
 <p>about works!</p>
+
+<ul [ngSwitch]= "userName">
+  <li *ngSwitchCase = "'user'">
+    <p>User login</p>
+  </li>
+  <li *ngSwitchCase= "'admin'">
+    <p>Admin login</p>
+  </li>
+  <li *ngSwitchDefault>
+    <p>Choose admin or login </p>
+  </li>
+</ul>
