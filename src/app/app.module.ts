@@ -8,6 +8,9 @@ import { AboutComponent } from './about/about.component';
 import { OnSalePipe } from './on-sale.pipe';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TempleformComponent } from './templeform/templeform.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { FormGroup, FormControl } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,12 +21,14 @@ import { TempleformComponent } from './templeform/templeform.component';
     OnSalePipe,
     PageNotFoundComponent,
     TempleformComponent,
+    ReactiveFormComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
